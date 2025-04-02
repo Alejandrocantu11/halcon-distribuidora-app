@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login</title>
+  <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+</head> <link rel="stylesheet" href="./css/styles.css" />
+
+<body>
+  <header>
+    <h1>Login y Registro</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="users.html">Gestión de Usuarios</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <form id="loginForm">
+        <h2>Iniciar Sesión</h2>
+        <input type="email" id="loginCorreo" placeholder="Correo" required />
+        <input type="password" id="loginPassword" placeholder="Contraseña" required />
+        <button type="submit">Entrar</button>
+      </form>
+    </section>
+
+    <section>
+      <form id="registerForm">
+        <h2>Registrarse</h2>
+        <input type="text" id="regNombre" placeholder="Nombre" required />
+        <input type="email" id="regCorreo" placeholder="Correo" required />
+        <input type="password" id="regPassword" placeholder="Contraseña" required />
+        <button type="submit">Registrar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Halcon Distribuidora</p>
+  </footer>
+
+  <!-- Script para manejar el login y registro -->
+  <script src="./js/login.js"></script>
+</body>
+</html>

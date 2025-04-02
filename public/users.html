@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gestión de Usuarios</title>
+  <!-- Si tienes un styles.css, inclúyelo aquí -->
+  <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+</head> <link rel="stylesheet" href="./css/styles.css" />
+
+<body>
+  <header>
+    <h1>Gestión de Usuarios</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="users.html">Gestión de Usuarios</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Lista de Usuarios</h2>
+    <!-- Formulario para agregar un usuario -->
+    <form id="formAddUser">
+      <input type="text" id="nombre" placeholder="Nombre" required />
+      <input type="email" id="correo" placeholder="Correo" required />
+      <input type="password" id="password" placeholder="Contraseña" required />
+      <button type="submit">Agregar Usuario</button>
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Correo</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="usersTableBody">
+        <!-- Se llenará dinámicamente con JavaScript -->
+      </tbody>
+    </table>
+  </main>
+
+  <footer>
+    <p>© 2025 Halcon Distribuidora</p>
+  </footer>
+
+  <!-- Enlaza tu script para la lógica de usuarios -->
+  <script src="./js/users.js"></script>
+</body>
+</html>
